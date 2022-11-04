@@ -11,8 +11,7 @@
         @foreach($trains as $train)
             <div>
                 <h3>{{ $train['azienda'] }}</h3>
-                <p>{{ $train['stazione_partenza'] }}</p>
-                <p>{{ $train['stazione_arrivo'] }}</p>
+                <p>From {{ $train['stazione_partenza'] }} to {{ $train['stazione_arrivo'] }}</p>
                 <p>{{ $train['orario_partenza'] }}</p>
             </div>
 
